@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap");
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  min-height: 100%;
+  padding-top: 20px;
+}
+.general-title-page {
+  font-family: "Philosopher";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.lesson__container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ff78c2;
+  border-radius: 15px 40px;
+}
+.lesson__container:not(:last-child) {
+  margin-bottom: 20px;
+}
+.lesson__container:hover {
+  box-shadow: 0px 0px 25px 9px #e1a3e4;
+}
+.lesson__container {
+  transition: box-shadow 0.4s ease 0s;
+}
+.lesson__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  color: white;
+}
+.lesson__link {
+  color: white;
+}
+.lesson__link:hover {
+  text-decoration: underline;
+}

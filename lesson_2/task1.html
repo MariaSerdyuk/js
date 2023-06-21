@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Task 1</title>
+  </head>
+  <body>
+   <main>
+      <h2 class="title">Задача 1. Знайти суму, добуток та частку двох дійсних чисел. Результат вивести у формі таблиці</h2>
+      <script>
+          //Введення даних
+         let firstRealNumber = parseFloat(prompt("Введіть значення першого дійсного числа", "4.67"));
+         let secondRealNumber = parseFloat(prompt("Введіть значення другого дійсного числа", "4.67"));
+
+          //Обчислення результату
+			let sum = firstRealNumber + secondRealNumber
+			let multiplication = firstRealNumber * secondRealNumber
+			let division = firstRealNumber / secondRealNumber
+
+          //Виведення
+			 document.write(`<table border = "2px"> <tbody>`)
+				document.write(`<tr>`)
+					document.write(`<td>Сума двох дійсних чисел</td> <td>${sum.toFixed(3)}</td>`);
+				document.write(`</tr>`)
+				document.write(`<tr>`)
+					document.write(`<td>Добуток двох дійсних чисел</td> <td>${multiplication.toFixed(3)}</td>`);
+				document.write(`</tr>`)
+				document.write(`<tr>`)
+					document.write(`<td>Частка двох дійсних чисел</td> <td>${division.toFixed(3)}</td>`);
+				document.write(`</tr>`)
+			document.write(`</tbody> </table>`)
+      </script>
+      </div>
+   </main>
+  </body>
+</html>
